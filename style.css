@@ -87,13 +87,23 @@ span {
 	font-size: 30px;
 }
 
+.result {
+	width: 75px;
+	height: 45px;
+	font-size: 15px;
+	color: tan;
+	background-color: #815b37;
+	border-radius: 4px;
+	display: inline;
+}
+
 .list {
 	display: block;
 	text-align: center;
 	font-size: 35px;
 	margin: 15px auto;
-	width: 837px;
-	max-width: 837px;
+	width: 663px;
+	max-width: 663px;
 	height: 100px;
 	border-radius: 4px;
 	background-color: #815b37;
