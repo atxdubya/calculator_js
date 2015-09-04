@@ -60,13 +60,15 @@ PAGE
 .dropdown-toggle {
 	background-color: #815b37;
 	color: tan;
-	width: 125px;
+	width: 50px;
 	height: 50px;
 	font-size: 20px;
 	margin-top: -15px;
+
 }
 
-.dropdown-menu, #add, #subtract, #multiply, #divide {
+
+.dropdown-menu, #add, #subtract, #multiply, #divide, #sumOfSquares, #isMultipleOf {
 	background-color: #815b37;
 	color: tan;
 }
@@ -90,8 +92,8 @@ span {
 	text-align: center;
 	font-size: 35px;
 	margin: 15px auto;
-	width: 875px;
-	max-width: 875px;
+	width: 837px;
+	max-width: 837px;
 	height: 100px;
 	border-radius: 4px;
 	background-color: #815b37;
