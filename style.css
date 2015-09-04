@@ -1,0 +1,109 @@
+
+/********
+GENERAL
+********/
+
+* {
+	box-sizing: border-box;
+}
+
+header {
+	width: 100%;
+	background-color: tan;
+	height: 100%;
+
+}
+
+body {
+	background-image: url("renaissance_background.jpg");
+	background-size: cover;
+	background-repeat: repeat;
+}
+
+
+
+/********
+HEADER
+********/
+
+h1 {
+	text-align: center;
+	color: #815b37;
+	font-size: 65px;
+	text-decoration: underline;
+	margin-top: 0;
+	padding-top: 22px;
+	font-family: 'Calligraffitti', cursive;
+}
+
+
+
+/********
+PAGE
+********/
+
+.calculator {
+	margin-top: 50px;
+	text-align: center;
+}
+
+.arrange {
+	display: inline;
+	border-radius: 4px;
+	background-color: #815b37;
+	color: tan;
+	width: 250px;
+	height: 50px;
+	font-size: 30px;
+}
+
+.dropdown-toggle {
+	background-color: #815b37;
+	color: tan;
+	width: 125px;
+	height: 50px;
+	font-size: 20px;
+	margin-top: -15px;
+}
+
+.dropdown-menu, #add, #subtract, #multiply, #divide {
+	background-color: #815b37;
+	color: tan;
+}
+
+.caret {
+	color: tan;
+}
+span {
+	display: inline;
+	color: #815b37;
+	margin: auto 2px;
+	font-size: 1.25em;
+	background-color: transparent;
+	width: 250px;
+	height: 50px;
+	font-size: 30px;
+}
+
+.list {
+	display: block;
+	text-align: center;
+	font-size: 35px;
+	margin: 15px auto;
+	width: 875px;
+	max-width: 875px;
+	height: 100px;
+	border-radius: 4px;
+	background-color: #815b37;
+	color: tan;
+}
+
+
+/********
+FOOTER
+********/
+
+
+
+
+
