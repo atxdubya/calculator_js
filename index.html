@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<script type="text/javascript" src="calculator.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $('.dropdown-toggle').dropdown();
+    });
+</script>
+</head>
+<body>
+	<header>
+		<h1>Rechner</h1>
+	</header>
+	<div class="calculator">
+		<input id="value1" type="number" placeholder="0"/>
+		<div class="operations">
+		<!-- 	<input id="add" type="button" value="add"/>
+			<input id="subtract" type="button" value="subtract"/>
+			<input id="multiply" type="button" value="multiply"/>
+			<input id="subtract" type="button" value="subtract"/> -->
+		<!-- <div class="btn-group">
+  			<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Operation<span class="caret"></span>
+  			</button>
+			  <ul class="dropdown-menu">
+			    <li><a href="http://www.google.com/">Add</a></li>
+			    <li><a href="#">Subtract</a></li>
+			    <li><a href="#">Multiply</a></li>
+			    <li><a href="#">Divide</a></li>
+			  </ul>
+		</div> -->
+		<div class="dropdown">
+    		<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+   		 	<span class="caret"></span>
+   		</button>
+   		 <ul class="dropdown-menu">
+      		<li><a href="#">HTML</a></li>
+      		<li><a href="#">CSS</a></li>
+      		<li><a href="#">JavaScript</a></li>
+    		</ul>
+  		</div>
+		<input id="value2" type="number" placeholder="0"/>
+		<input id="result" type="number" placeholder="Result"/>
+	</div>
+</body>
+</html>
