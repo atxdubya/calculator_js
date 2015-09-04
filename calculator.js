@@ -9,8 +9,8 @@ $(".result").on("click" , function(event){
 		var operation='add';
 
 		var answer= calculate(num1, num2, operation);
-		console.log(answer);
-
+		// console.log(answer);
+		$(".list").text(answer);
 	
 });
 
@@ -19,12 +19,14 @@ $(".result").on("click" , function(event){
 	var num=[];
 	var choice = 'yes';
 	var primeNum=[];
+	var num1= $(".value1").val();
+		var num2= $(".value2").val();
 
 	function calculate (num1, num2, operation) {
 
 		switch(operation) {
 
-		case 'add' : 		num=num1+num2;
+		case 'add' : 		num=parseInt(num1)+ parseInt(num2);
 							break;
 
 		case 'subtract': 	num=num1-num2;
@@ -101,10 +103,9 @@ $(".result").on("click" , function(event){
 	} 
 
 	//close function
-	while(choice === 'yes')
-			{
+	
 
-	 var num1 = prompt('Please enter the first number.');
+	 //var num1 = prompt('Please enter the first number.');
 	 //var num1= $("value1 arrange").val();
 	 // num1=parseInt(num1,10);
 //	num1='a';
@@ -112,7 +113,7 @@ $(".result").on("click" , function(event){
 	if (!isNaN(num1))
 	{
 
-	 var num2 = prompt('Please enter the second number');
+	var num2 = prompt('Please enter the second number');
 	 //var num1= $("value2 arrange").val();
 	  //num2=parseInt(num2,10);
 
@@ -120,7 +121,7 @@ $(".result").on("click" , function(event){
 
 		{
 
-	 var operation = prompt('Please enter the operation');
+	 // var operation = prompt('Please enter the operation');
 	// var operation = 'add';
 
 	 //var operation= $("value1 arrange").val();
@@ -131,7 +132,7 @@ $(".result").on("click" , function(event){
 			prompt(results);
 
 
-				choice = prompt("would you like to try this again?");
+				// choice = prompt("would you like to try this again?");
 
 
 // 			}
@@ -146,7 +147,7 @@ $(".result").on("click" , function(event){
 		alert("Invalid choice.");
 
 
-}
+
 
 //close while loop
 
