@@ -1,22 +1,39 @@
 
+
+//enter on result box
+
+$(".result").on("click" , function(event){
+
+		var num1= $(".value1").val();
+		var num2= $(".value2").val();
+		var operation='add';
+
+		var answer= calculate(num1, num2, operation);
+		console.log(answer);
+
+	
+});
+
+
 	results = [];
-	var num=0;
+	var num=[];
 	var choice = 'yes';
+	var primeNum=[];
 
 	function calculate (num1, num2, operation) {
 
 		switch(operation) {
 
-		case 'add' '+' : 		num=num1+num2;
+		case 'add' : 		num=num1+num2;
 							break;
 
-		case 'subtract' '-' : 	num=num1-num2;
+		case 'subtract': 	num=num1-num2;
 							break;
 
-		case'multiply' '*': 	num=num1*num2;
+		case'multiply': 	num=num1*num2;
 							break;
 
-		case'divide' '/': 		num=num1/num2;
+		case'divide': 		num=num1/num2;
 							break;
 
 		case 'sumOfSquares':num= num1*num1 + num2*num2;
@@ -41,30 +58,38 @@
 							}
 							break;
 
-		case 'PrimeNumbers':{	num=num1;
-						
-								if(
-										for(var i=2; i<=num;i++)
+		case 'primeNumbers':{	
+								var count=0;
+								
+
+								if (num1>num2)
+							  	{
+							  		low=num2;
+							  		high=num1
+							  	}
+							  	else  
+							  	{
+							  		low=num1;
+							  		high=num2;
+							  	}
+								
+							  for(var i=low; i<=high; i++)
+							  {
+									for(var j=2; j<=i;j++)
 									{
-										var count=0;
-										if(num1%i === 0)
+										
+										if(i%j === 0)
 											count++;
 									}
 
-									if (count===1)
-										{
-											num=num2;
-											count=0;
-											continue;
-										}
-
-									else
-										return false){
-
-								})
-								num=true;		
+									if (count === 1)
+									primeNum.push(i);				
 
 							  }	
+
+							  num=primeNum;
+
+							  }
 
 		default: alert("This is not a vaild choice.");										
 							break;
@@ -96,6 +121,8 @@
 		{
 
 	 var operation = prompt('Please enter the operation');
+	// var operation = 'add';
+
 	 //var operation= $("value1 arrange").val();
 
 		// operation='subtract';
